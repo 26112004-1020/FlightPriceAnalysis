@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bestfly</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 0;
+    padding: 0;}
+
+h1 {
+    color: #333;
+}
+
+form {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+select, input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("down-arrow.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+form label:last-child,
+form input[type="submit"] {
+    margin-bottom: 0;
+}
+
+
+form {
+    text-align: left;
+}
+</style>
+<body>
+    <h1>Bestfly - Flight Details Retrieval System</h1>
+    <form method="POST">
+        <label for="from_location">From Location:</label>
+        <select name="from_location" id="from_location">
+            <option >-----SELECT-----</option>
+            <option value="MAA">Chennai</option>
+            <option value="BLR">Bangaluru</option>
+            <option value="DEL">Delhi</option>
+            <option value="BOM">Mumbai</option>
+            <option value="CCU">Kolkata</option>
+            <option value="HYDL">Hyderabad</option>
+            <option value="GOI">Goa</option>
+            <option value="SXR">Srinagar</option>
+            <option value="Pnx">Pune</option>
+            <option value="VNS">Varanasi</option>
+            <option value="AMD">Ahmedabad</option>
+        </select><br><br>
+        <label for="to_location">To Location:</label>
+        <select name="to_location" id="to_location">
+            <option >-----SELECT-----</option>
+            <option value="MAA">Chennai</option>
+            <option value="BLR">Bangaluru</option>
+            <option value="DEL">Delhi</option>
+            <option value="BOM">Mumbai</option>
+            <option value="CCU">Kolkata</option>
+            <option value="HYDL">Hyderabad</option>
+            <option value="GOI">Goa</option>
+            <option value="SXR">Srinagar</option>
+            <option value="Pnx">Pune</option>
+            <option value="VNS">Varanasi</option>
+            <option value="AMD">Ahmedabad</option>
+
+        </select><br><br>
+        <label for="travel_date">Travel Date (YYYY-MM-DD):</label>
+        <input type="text" name="travel_date" id="travel_date"><br><br>
+        <label for="return_date">Return Date (YYYY-MM-DD):</label>
+        <input type="text" name="return_date" id="return_date"><br><br>
+        <input type="submit" value="Search Flights">
+    </form>
+</body>
+</html>
